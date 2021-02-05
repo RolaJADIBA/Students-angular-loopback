@@ -1,0 +1,5 @@
+.fond{
+    background: url(../images/fond.jpg) no-repeat;
+    background-size: cover;
+    height: 80vh;
+}

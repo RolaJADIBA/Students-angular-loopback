@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row justify-content-center shadow p-5 bg-light">
+        <h2 class="text-center text-danger">List Students</h2>
+        <div class="table-responsive mt-5">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let student of students" [class.selected]="student === selectedStudent"
+                    (click)="onSelect(student)">
+                        <td class="badge">{{student.id}}</td>
+                        <td>{{student.name}}</td>
+                        <td>{{student.email}}</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+<app-student-detail [student]="selectedStudent"></app-student-detail>
+

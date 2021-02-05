@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <form class="shadow p-5">
+            <div class="mb-3">
+              <label for="name" class="form-label">Student Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+              <div id="nameHelp" class="form-text">Enter student name</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="description">description</label>
+              <input type="text" class="form-control" id="description" aria-describedby="descriptionHelp">
+              <div id="descriptionHelp" class="form-text">Enter student description</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="nameHelp" class="form-text">Enter student email</div>
+            </div>
+            <button class="btn btn-primary" (click)="createStudent()">Create student</button>
+          </form>
+    </div>
+</div>
